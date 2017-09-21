@@ -24,7 +24,7 @@ public class LinkList{
 	//尾端插入一个节点
 	public void add(PolyNode data){
 		Node temp = head;
-		while(head.next!=null)
+		while(temp.next!=null)
 			temp = temp.next;
 		Node node = new Node(temp,data);
 		node = temp.next;

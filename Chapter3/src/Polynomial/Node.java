@@ -1,6 +1,4 @@
 package Polynomial;
-
-
 /**     
 * @author 李安迪
 * @date 2017年9月21日
@@ -8,9 +6,9 @@ package Polynomial;
 */
 public class Node {
 
-	public PolyNode data;
-	public Node next;
-	public Node prev;
+	PolyNode data;
+	Node next;
+	Node prev;
 	
 	public Node(PolyNode data){
 		this.data = data;

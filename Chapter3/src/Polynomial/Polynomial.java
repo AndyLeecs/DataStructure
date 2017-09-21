@@ -7,7 +7,7 @@ import java.util.ListIterator;
 /**     
 * @author 李安迪
 * @date 2017年9月20日
-* @description
+* @description 调用java库实现的多项式加法，注意每次next都相当于指针的移动
 */
 public class Polynomial {
 
