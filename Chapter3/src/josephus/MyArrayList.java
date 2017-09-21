@@ -5,7 +5,7 @@ import java.lang.reflect.Array;
 /**     
 * @author 李安迪
 * @date 2017年9月21日
-* @description
+* @description josephus问题的循环数组，注意先不要调试，先审查
 */
 public class MyArrayList {
 
