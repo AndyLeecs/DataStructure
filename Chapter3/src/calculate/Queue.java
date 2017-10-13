@@ -3,28 +3,30 @@ package calculate;
 
 /**     
 * @author 李安迪
-* @date 2017年9月23日
-* @description 实现一个栈,注意实现链表时好好考虑链接的方向，同时首次利用了泛型
+* @date 2017年10月13日
+* @description
 */
-public class Stack<T> {
+public class Queue<T> {
 	SingleLinkNode<T> bottom;
 	SingleLinkNode<T> top;
 	
-	public Stack(){
+	public Queue(){
 		
 	}
-	public Stack(T c){
+	public Queue(T c){
 		bottom = new SingleLinkNode<T>(c);
 		top = bottom;
 	}
 	
 	public void push(T c){
-		if(this.isEmpty())
-			top = new SingleLinkNode<T>(c);
+		if(this.isEmpty()){
+			bottom = new SingleLinkNode<T>(c);
+            top = bottom;
+		}
 		else{
-		SingleLinkNode<T> temp = top;
-		top = new SingleLinkNode<T>(c);
-		top.next = temp;
+		SingleLinkNode<T> temp = new SingleLinkNode<T>(c);
+		bottom.next = temp;
+		bottom = temp;
 		}
 	}
 	
@@ -57,4 +59,17 @@ public class Stack<T> {
 		top = null;
 		bottom = null;
 	}
+	@Override
+	public String toString() {
+
+		String s = "";
+		while(!this.isEmpty()&&!top.equals(bottom)){
+		SingleLinkNode<T> temp = new SingleLinkNode<T>(this.pop());
+		s += temp.data;
+		}
+		return s;
+	}
+
+	
+
 }

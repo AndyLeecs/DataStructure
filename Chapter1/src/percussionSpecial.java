@@ -8,6 +8,8 @@
 public class percussionSpecial {
 	
 	public static final int GAP = 48;
+	
+	//生成需要排列的字符
 	public static void cal(int n, int r){
 		
 	    char[] temp = new char[n];
