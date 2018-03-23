@@ -1,7 +1,5 @@
 package josephus;
 
-import java.lang.reflect.Array;
-
 /**     
 * @author 李安迪
 * @date 2017年9月21日

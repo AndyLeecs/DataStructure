@@ -1,7 +1,6 @@
 package Polynomial;
 
 import java.util.LinkedList;
-import java.util.ListIterator;
 
 /**     
 * @author 李安迪
@@ -20,6 +19,7 @@ public class MyPolynomial {
 	}
 
 	
+	@Override
 	public String toString(){
 		String s = "";
 		while(!l.isPastEnd()){

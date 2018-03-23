@@ -18,13 +18,13 @@ public class InToPost {
 				result +=c;
 			else{
 				if( c == ')'){
-					while((d = (Character)(stack.pop())) != '(')
+					while((d = (stack.pop())) != '(')
 						result += d;
 
 				}
 				else{
 				//弹出优先级低的元素
-				while(!stack.isEmpty()&&Hierarchy.compare((char) (stack.top.data),c))
+				while(!stack.isEmpty()&&Hierarchy.compare((stack.top.data),c))
 					result+=stack.pop();
 				stack.push(c);
 				}

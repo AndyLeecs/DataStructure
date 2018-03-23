@@ -43,13 +43,13 @@ public class InToPostEff {
 				}
 				else{
 					if( c .equals(")")){
-						while(!stack.isEmpty()&&!(d = (String)(stack.pop())).equals("("))
+						while(!stack.isEmpty()&&!(d = (stack.pop())).equals("("))
 							result += d;
 
 					}
 					else{
 					//弹出优先级低的元素
-					while(!stack.isEmpty()&&NewHierarchy.compare((String) (stack.top.data),c))
+					while(!stack.isEmpty()&&NewHierarchy.compare((stack.top.data),c))
 						result+=stack.pop();
 					stack.push(c);
 					}

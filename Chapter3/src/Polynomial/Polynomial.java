@@ -22,6 +22,7 @@ public class Polynomial {
 	}
 
 	
+	@Override
 	public String toString(){
 		String s = "";
 		while(first.hasNext()){
